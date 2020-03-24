@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gamal\\Desktop\\Uni\\BA-CS\\Year 2 Semester 1\\COS20007\\Week2\\2.1\\Counter\\Counter\\Counter.csproj": {}
+    "C:\\Users\\gamal.DESKTOP-RDQOH6J\\Desktop\\Year 2 Semester 1\\COS20007\\Week2\\2.1\\Counter\\Counter\\Counter.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gamal\\Desktop\\Uni\\BA-CS\\Year 2 Semester 1\\COS20007\\Week2\\2.1\\Counter\\Counter\\Counter.csproj": {
+    "C:\\Users\\gamal.DESKTOP-RDQOH6J\\Desktop\\Year 2 Semester 1\\COS20007\\Week2\\2.1\\Counter\\Counter\\Counter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gamal\\Desktop\\Uni\\BA-CS\\Year 2 Semester 1\\COS20007\\Week2\\2.1\\Counter\\Counter\\Counter.csproj",
+        "projectUniqueName": "C:\\Users\\gamal.DESKTOP-RDQOH6J\\Desktop\\Year 2 Semester 1\\COS20007\\Week2\\2.1\\Counter\\Counter\\Counter.csproj",
         "projectName": "Counter",
-        "projectPath": "C:\\Users\\gamal\\Desktop\\Uni\\BA-CS\\Year 2 Semester 1\\COS20007\\Week2\\2.1\\Counter\\Counter\\Counter.csproj",
-        "packagesPath": "C:\\Users\\gamal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gamal\\Desktop\\Uni\\BA-CS\\Year 2 Semester 1\\COS20007\\Week2\\2.1\\Counter\\Counter\\obj\\",
+        "projectPath": "C:\\Users\\gamal.DESKTOP-RDQOH6J\\Desktop\\Year 2 Semester 1\\COS20007\\Week2\\2.1\\Counter\\Counter\\Counter.csproj",
+        "packagesPath": "C:\\Users\\gamal.DESKTOP-RDQOH6J\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gamal.DESKTOP-RDQOH6J\\Desktop\\Year 2 Semester 1\\COS20007\\Week2\\2.1\\Counter\\Counter\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\gamal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gamal.DESKTOP-RDQOH6J\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -52,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

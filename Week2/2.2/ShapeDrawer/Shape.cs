@@ -1,7 +1,6 @@
 ﻿using System;
 using SplashKitSDK;
-using System.Collections.Generic;
-using System.Text;
+
 
 namespace ShapeDrawer
 {
@@ -11,12 +10,13 @@ namespace ShapeDrawer
         private float _x, _y;
         private int _width, _height;
 
-        public Shape(Point2D pt)
+        public Shape()
         {
-            _x = (float)pt.X;
-            _y = (float)pt.Y;
-            _height = 100;
-            _width = 50;
+            _x = 0;
+            _y = 0;
+            _height = 50;
+            _width = 100;
+            _color = SplashKit.ColorWhite();
 
         }
 
@@ -83,17 +83,18 @@ namespace ShapeDrawer
         public void Draw()
         {
             SplashKit.FillRectangle(_color, _x, _y, _width, _height);
+            
         }
 
         public bool IsAt(Point2D pt)
         {
-            if (((pt.X >= _x) && (pt.X <= (_x + _width))) && (pt.Y >= _y) && (pt.Y <= (_y + _height)))
+            if ((((pt.X >= _x) && (pt.X <= (_x + _width))) && (pt.Y >= _y) && (pt.Y <= (_y + _height))))
             {
-                return false;
+                return true;
             }
             else
             {
-                return true;
+                return false;
             }
         }
     }

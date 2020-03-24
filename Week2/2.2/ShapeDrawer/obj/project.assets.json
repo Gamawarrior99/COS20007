@@ -676,19 +676,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gamal\\.nuget\\packages\\": {}
+    "C:\\Users\\gamal.DESKTOP-RDQOH6J\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gamal\\Desktop\\Uni\\BA-CS\\Year 2 Semester 1\\COS20007\\Week2\\2.2\\ShapeDrawer\\ShapeDrawer.csproj",
+      "projectUniqueName": "C:\\Users\\gamal.DESKTOP-RDQOH6J\\Desktop\\Year 2 Semester 1\\COS20007\\Week2\\2.2\\ShapeDrawer\\ShapeDrawer.csproj",
       "projectName": "ShapeDrawer",
-      "projectPath": "C:\\Users\\gamal\\Desktop\\Uni\\BA-CS\\Year 2 Semester 1\\COS20007\\Week2\\2.2\\ShapeDrawer\\ShapeDrawer.csproj",
-      "packagesPath": "C:\\Users\\gamal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gamal\\Desktop\\Uni\\BA-CS\\Year 2 Semester 1\\COS20007\\Week2\\2.2\\ShapeDrawer\\obj\\",
+      "projectPath": "C:\\Users\\gamal.DESKTOP-RDQOH6J\\Desktop\\Year 2 Semester 1\\COS20007\\Week2\\2.2\\ShapeDrawer\\ShapeDrawer.csproj",
+      "packagesPath": "C:\\Users\\gamal.DESKTOP-RDQOH6J\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gamal.DESKTOP-RDQOH6J\\Desktop\\Year 2 Semester 1\\COS20007\\Week2\\2.2\\ShapeDrawer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\gamal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gamal.DESKTOP-RDQOH6J\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -729,7 +729,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -6,12 +6,12 @@ namespace week1task1
     {
         static void Main(string[] args)
         {
-            message[] message = new message[5];
-            message[0] = new message("Welcome back oh great educator!");
-            message[1] = new message("What a lovely name");
-            message[2] = new message("Great name");
-            message[3] = new message("This name is God!");
-            message[4] = new message("That is a silly name");
+            Message[] message = new Message[5];
+            message[0] = new Message("Welcome back oh great educator!");
+            message[1] = new Message("What a lovely name");
+            message[2] = new Message("Great name");
+            message[3] = new Message("This name is God!");
+            message[4] = new Message("That is a silly name");
 
             Console.Write("Enter your name: ");
 

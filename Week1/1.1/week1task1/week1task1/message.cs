@@ -2,11 +2,11 @@
 
 namespace week1task1
 {
-    class message
+    class Message
     {
         private string _text;
 
-        public message(String txt)
+        public Message(String txt)
         {
             _text = txt;
         }
