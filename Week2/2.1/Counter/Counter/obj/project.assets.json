@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\gamal.DESKTOP-RDQOH6J\\.nuget\\packages\\": {}
+    "C:\\Users\\gamal\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gamal.DESKTOP-RDQOH6J\\Desktop\\Year 2 Semester 1\\COS20007\\Week2\\2.1\\Counter\\Counter\\Counter.csproj",
+      "projectUniqueName": "C:\\Users\\gamal\\Documents\\Uni\\BA-CS\\Year 2 Semester 1\\COS20007\\Week2\\2.1\\Counter\\Counter\\Counter.csproj",
       "projectName": "Counter",
-      "projectPath": "C:\\Users\\gamal.DESKTOP-RDQOH6J\\Desktop\\Year 2 Semester 1\\COS20007\\Week2\\2.1\\Counter\\Counter\\Counter.csproj",
-      "packagesPath": "C:\\Users\\gamal.DESKTOP-RDQOH6J\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gamal.DESKTOP-RDQOH6J\\Desktop\\Year 2 Semester 1\\COS20007\\Week2\\2.1\\Counter\\Counter\\obj\\",
+      "projectPath": "C:\\Users\\gamal\\Documents\\Uni\\BA-CS\\Year 2 Semester 1\\COS20007\\Week2\\2.1\\Counter\\Counter\\Counter.csproj",
+      "packagesPath": "C:\\Users\\gamal\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gamal\\Documents\\Uni\\BA-CS\\Year 2 Semester 1\\COS20007\\Week2\\2.1\\Counter\\Counter\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\gamal.DESKTOP-RDQOH6J\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gamal\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

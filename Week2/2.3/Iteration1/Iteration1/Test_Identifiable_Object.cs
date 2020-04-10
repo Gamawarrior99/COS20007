@@ -21,32 +21,33 @@ namespace Iteration1
         [Test]
         public void TestAreYou()
         {
-            Assert.AreEqual(true, _id.AreYou("id1"), "id1 should Exist");
+            Assert.That(_id.AreYou("id1"), Is.True);
         }
 
         [Test]
         public void TestAreYouNot()
         {
-            Assert.AreEqual(false, _id.AreYou("id3"), "id3 should not Exist");
+            Assert.That(_id.AreYou("id3"), Is.False);
         }
 
         [Test]
         public void TestAreYouCaseSensative()
         {
-            Assert.AreEqual(true, _id.AreYou("Id1"), "id1 should Exist");
+            Assert.That(_id.AreYou("ID1"), Is.True);
         }
 
         [Test]
         public void TestFirstID()
         {
             Assert.AreEqual("id1", _id.FirstId(), "id1 should be First ID");
+
         }
 
         [Test]
         public void TestAddID()
         {
             _id.Add_Identifier("id3");
-            Assert.AreEqual(true, _id.AreYou("Id3"), "id3 should now  Exist");
+            Assert.That(_id.AreYou("id3"), Is.True);
         }
     }
 

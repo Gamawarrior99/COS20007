@@ -16,7 +16,7 @@ namespace ShapeDrawer
                 SplashKit.ClearScreen();
                 myshape.Draw();
 
-                if (SplashKit.MouseClicked(MouseButton.LeftButton) == true)
+                if (SplashKit.MouseClicked(MouseButton.LeftButton))
                 {
                     myshape.X = SplashKit.MouseX();
                     myshape.Y = SplashKit.MouseY();
@@ -26,7 +26,7 @@ namespace ShapeDrawer
 
                 if (myshape.IsAt(SplashKit.MousePosition()))
                 {
-                    if (SplashKit.KeyTyped(KeyCode.SpaceKey) == true)
+                    if (SplashKit.KeyTyped(KeyCode.SpaceKey))
                         {
                             myshape.color = SplashKit.RandomColor();
                         }

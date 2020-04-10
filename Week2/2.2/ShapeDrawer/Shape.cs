@@ -56,7 +56,7 @@ namespace ShapeDrawer
             }
         }
 
-        public int WIDTH
+        public int Width
         {
             get
             {
@@ -68,7 +68,7 @@ namespace ShapeDrawer
             }
         }
 
-        public int HEIGHT
+        public int Height
         {
             get
             {

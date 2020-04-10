@@ -22,3 +22,16 @@ C:\Users\gamal.DESKTOP-RDQOH6J\Desktop\Year 2 Semester 1\COS20007\Week2\2.1\Coun
 C:\Users\gamal.DESKTOP-RDQOH6J\Desktop\Year 2 Semester 1\COS20007\Week2\2.1\Counter\Counter\obj\Debug\netcoreapp3.1\Counter.dll
 C:\Users\gamal.DESKTOP-RDQOH6J\Desktop\Year 2 Semester 1\COS20007\Week2\2.1\Counter\Counter\obj\Debug\netcoreapp3.1\Counter.pdb
 C:\Users\gamal.DESKTOP-RDQOH6J\Desktop\Year 2 Semester 1\COS20007\Week2\2.1\Counter\Counter\obj\Debug\netcoreapp3.1\Counter.genruntimeconfig.cache
+C:\Users\gamal\Documents\Uni\BA-CS\Year 2 Semester 1\COS20007\Week2\2.1\Counter\Counter\bin\Debug\netcoreapp3.1\Counter.exe
+C:\Users\gamal\Documents\Uni\BA-CS\Year 2 Semester 1\COS20007\Week2\2.1\Counter\Counter\bin\Debug\netcoreapp3.1\Counter.deps.json
+C:\Users\gamal\Documents\Uni\BA-CS\Year 2 Semester 1\COS20007\Week2\2.1\Counter\Counter\bin\Debug\netcoreapp3.1\Counter.runtimeconfig.json
+C:\Users\gamal\Documents\Uni\BA-CS\Year 2 Semester 1\COS20007\Week2\2.1\Counter\Counter\bin\Debug\netcoreapp3.1\Counter.runtimeconfig.dev.json
+C:\Users\gamal\Documents\Uni\BA-CS\Year 2 Semester 1\COS20007\Week2\2.1\Counter\Counter\bin\Debug\netcoreapp3.1\Counter.dll
+C:\Users\gamal\Documents\Uni\BA-CS\Year 2 Semester 1\COS20007\Week2\2.1\Counter\Counter\bin\Debug\netcoreapp3.1\Counter.pdb
+C:\Users\gamal\Documents\Uni\BA-CS\Year 2 Semester 1\COS20007\Week2\2.1\Counter\Counter\obj\Debug\netcoreapp3.1\Counter.csprojAssemblyReference.cache
+C:\Users\gamal\Documents\Uni\BA-CS\Year 2 Semester 1\COS20007\Week2\2.1\Counter\Counter\obj\Debug\netcoreapp3.1\Counter.csproj.CoreCompileInputs.cache
+C:\Users\gamal\Documents\Uni\BA-CS\Year 2 Semester 1\COS20007\Week2\2.1\Counter\Counter\obj\Debug\netcoreapp3.1\Counter.AssemblyInfoInputs.cache
+C:\Users\gamal\Documents\Uni\BA-CS\Year 2 Semester 1\COS20007\Week2\2.1\Counter\Counter\obj\Debug\netcoreapp3.1\Counter.AssemblyInfo.cs
+C:\Users\gamal\Documents\Uni\BA-CS\Year 2 Semester 1\COS20007\Week2\2.1\Counter\Counter\obj\Debug\netcoreapp3.1\Counter.dll
+C:\Users\gamal\Documents\Uni\BA-CS\Year 2 Semester 1\COS20007\Week2\2.1\Counter\Counter\obj\Debug\netcoreapp3.1\Counter.pdb
+C:\Users\gamal\Documents\Uni\BA-CS\Year 2 Semester 1\COS20007\Week2\2.1\Counter\Counter\obj\Debug\netcoreapp3.1\Counter.genruntimeconfig.cache

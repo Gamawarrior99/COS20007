@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gamal.DESKTOP-RDQOH6J\\Desktop\\Year 2 Semester 1\\COS20007\\Week2\\2.2\\ShapeDrawer\\ShapeDrawer.csproj": {}
+    "C:\\Users\\gamal\\Documents\\Uni\\BA-CS\\Year 2 Semester 1\\COS20007\\Week2\\2.2\\ShapeDrawer\\ShapeDrawer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gamal.DESKTOP-RDQOH6J\\Desktop\\Year 2 Semester 1\\COS20007\\Week2\\2.2\\ShapeDrawer\\ShapeDrawer.csproj": {
+    "C:\\Users\\gamal\\Documents\\Uni\\BA-CS\\Year 2 Semester 1\\COS20007\\Week2\\2.2\\ShapeDrawer\\ShapeDrawer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gamal.DESKTOP-RDQOH6J\\Desktop\\Year 2 Semester 1\\COS20007\\Week2\\2.2\\ShapeDrawer\\ShapeDrawer.csproj",
+        "projectUniqueName": "C:\\Users\\gamal\\Documents\\Uni\\BA-CS\\Year 2 Semester 1\\COS20007\\Week2\\2.2\\ShapeDrawer\\ShapeDrawer.csproj",
         "projectName": "ShapeDrawer",
-        "projectPath": "C:\\Users\\gamal.DESKTOP-RDQOH6J\\Desktop\\Year 2 Semester 1\\COS20007\\Week2\\2.2\\ShapeDrawer\\ShapeDrawer.csproj",
-        "packagesPath": "C:\\Users\\gamal.DESKTOP-RDQOH6J\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gamal.DESKTOP-RDQOH6J\\Desktop\\Year 2 Semester 1\\COS20007\\Week2\\2.2\\ShapeDrawer\\obj\\",
+        "projectPath": "C:\\Users\\gamal\\Documents\\Uni\\BA-CS\\Year 2 Semester 1\\COS20007\\Week2\\2.2\\ShapeDrawer\\ShapeDrawer.csproj",
+        "packagesPath": "C:\\Users\\gamal\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gamal\\Documents\\Uni\\BA-CS\\Year 2 Semester 1\\COS20007\\Week2\\2.2\\ShapeDrawer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\gamal.DESKTOP-RDQOH6J\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gamal\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

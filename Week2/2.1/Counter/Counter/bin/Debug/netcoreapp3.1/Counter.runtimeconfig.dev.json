@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\gamal.DESKTOP-RDQOH6J\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\gamal.DESKTOP-RDQOH6J\\.nuget\\packages"
+      "C:\\Users\\gamal\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\gamal\\.nuget\\packages"
     ]
   }
 }

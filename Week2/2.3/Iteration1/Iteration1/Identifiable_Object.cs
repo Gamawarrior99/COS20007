@@ -8,8 +8,8 @@ namespace Iteration1
 {
     class Identifiable_Object
     {
-        private List<string> _identifiers = new List<string>();
-        private int _i = 0;
+        private List<string> _identifiers;
+        
 
         public List<string> Identifiers
         {
@@ -25,12 +25,15 @@ namespace Iteration1
 
         public Identifiable_Object(string[] idents)
         {
-            Identifiers = new List<string>(idents);
+            foreach (string s in idents)
+            {
+                _identifiers.Add(s.ToLower());
+            }
         }
 
         public bool AreYou(string id)
         {
-            foreach (string s in Identifiers)
+            foreach (string s in _identifiers)
             {
                 if (id.ToLower() == s)
                 {
@@ -42,12 +45,12 @@ namespace Iteration1
 
         public string FirstId()
         {
-            if (Identifiers.Count == 0)
+            if (_identifiers.Count == 0)
             {
                 return "";
             }
 
-            return Identifiers[0].ToLower();
+            return _identifiers[0].ToLower();
         }
 
         public void Add_Identifier(string id)
