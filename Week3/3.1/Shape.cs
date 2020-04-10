@@ -2,13 +2,14 @@
 using SplashKitSDK;
 
 
-namespace Shape_Drawer
+namespace ShapeDrawer
 {
     class Shape
     {
         private Color _color;
         private float _x, _y;
         private int _width, _height;
+        private bool _selected;
 
         public Shape()
         {
@@ -56,7 +57,7 @@ namespace Shape_Drawer
             }
         }
 
-        public int WIDTH
+        public int Width
         {
             get
             {
@@ -68,7 +69,7 @@ namespace Shape_Drawer
             }
         }
 
-        public int HEIGHT
+        public int Height
         {
             get
             {
@@ -80,9 +81,19 @@ namespace Shape_Drawer
             }
         }
 
+        public bool Selected 
+        { 
+            get => _selected; 
+            set => _selected = value; 
+        }
+
         public void Draw()
         {
             SplashKit.FillRectangle(_color, _x, _y, _width, _height);
+            if (_selected)
+            {
+                this.DrawOutline();
+            }
 
         }
 
@@ -96,6 +107,11 @@ namespace Shape_Drawer
             {
                 return false;
             }
+        }
+
+        public void DrawOutline()
+        {
+            SplashKit.DrawRectangle(SplashKit.ColorBlack(), _x - 2, _y - 2, _width + 4, _height + 4); 
         }
     }
 }
