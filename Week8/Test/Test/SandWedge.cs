@@ -20,18 +20,19 @@ namespace Test
         {
             while (_count > 0)
             {
-                Console.WriteLine("I am in my happy place \n");
+                Console.WriteLine("I am in my happy place");
                 _count -= 1;
             }
             if (_count == 0)
             {
-                Console.WriteLine("Hand me My hockey Stick\n");
+                Console.WriteLine("Hand me My hockey Stick");
+                this.Throw();
             }
         }
 
         public void Throw()
         {
-            _count = 0;
+            _count = 5;
         }
 
     }

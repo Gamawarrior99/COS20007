@@ -13,10 +13,9 @@ namespace Test
             Golfer Player = new Golfer();
             Putter Putt = new Putter();
             SandWedge sand = new SandWedge();
+            /*creation of Objects used */
 
-            Player.PickUp(Putt);
-            Player.PickUp(sand);
-
+            /*test if Holding is false*/
             if (Player.Holding() == true)
             {
                 Console.WriteLine("Breate and Focus");
@@ -27,6 +26,25 @@ namespace Test
             {
                 Console.WriteLine("Where is my Caddy?");
             }
+
+            /* This adds Two types of Clubs to the player */
+            Player.PickUp(Putt);
+            Player.PickUp(sand);
+
+            /*This Tests if  holding is true */
+            if (Player.Holding() == true)
+            {
+                Console.WriteLine("Breate and Focus");
+                Player.Swing(Putt);
+                Player.Swing(sand);
+                Player.Swing(sand); //test reset
+            }
+            else
+            {
+                Console.WriteLine("Where is my Caddy?");
+            }
+
+            /* keeps informatino on screen to be read */
             Console.ReadLine();
         }
     }

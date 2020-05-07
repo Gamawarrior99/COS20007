@@ -5,3 +5,10 @@ C:\Users\gamal\Documents\Uni\BA-CS\Year 2 Semester 1\COS20007\Week 8\Test\Test\o
 C:\Users\gamal\Documents\Uni\BA-CS\Year 2 Semester 1\COS20007\Week 8\Test\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
 C:\Users\gamal\Documents\Uni\BA-CS\Year 2 Semester 1\COS20007\Week 8\Test\Test\obj\Debug\Test.exe
 C:\Users\gamal\Documents\Uni\BA-CS\Year 2 Semester 1\COS20007\Week 8\Test\Test\obj\Debug\Test.pdb
+C:\Users\gamal\Documents\Uni\BA-CS\Year 2 Semester 1\COS20007\Week8\Test\Test\bin\Debug\Test.exe.config
+C:\Users\gamal\Documents\Uni\BA-CS\Year 2 Semester 1\COS20007\Week8\Test\Test\bin\Debug\Test.exe
+C:\Users\gamal\Documents\Uni\BA-CS\Year 2 Semester 1\COS20007\Week8\Test\Test\bin\Debug\Test.pdb
+C:\Users\gamal\Documents\Uni\BA-CS\Year 2 Semester 1\COS20007\Week8\Test\Test\obj\Debug\Test.csprojAssemblyReference.cache
+C:\Users\gamal\Documents\Uni\BA-CS\Year 2 Semester 1\COS20007\Week8\Test\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\Users\gamal\Documents\Uni\BA-CS\Year 2 Semester 1\COS20007\Week8\Test\Test\obj\Debug\Test.exe
+C:\Users\gamal\Documents\Uni\BA-CS\Year 2 Semester 1\COS20007\Week8\Test\Test\obj\Debug\Test.pdb
