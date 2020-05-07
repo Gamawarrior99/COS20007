@@ -10,17 +10,29 @@ namespace Test
     {
         public static void Main()
         {
+            /*creation of Objects used */
             Golfer Player = new Golfer();
             Putter Putt = new Putter();
             SandWedge sand = new SandWedge();
-            /*creation of Objects used */
+            string choice = "P";
 
             /*test if Holding is false*/
             if (Player.Holding() == true)
             {
+                Console.WriteLine("Choose a \n P) Putter \n S) SandWedge");
+                choice = Console.ReadLine();
                 Console.WriteLine("Breate and Focus");
-                Player.Swing(Putt);
-                Player.Swing(sand);
+
+                if (choice == "P")
+                {
+                    Player.Swing(Putt);
+                }
+                else if (choice == "S")
+                {
+                    Player.Swing(sand);
+                }
+                
+               
             }
             else
             {
@@ -34,10 +46,18 @@ namespace Test
             /*This Tests if  holding is true */
             if (Player.Holding() == true)
             {
+                Console.WriteLine("Choose a \n P) Putter \n S) SandWedge");
+                choice = Console.ReadLine();
                 Console.WriteLine("Breate and Focus");
-                Player.Swing(Putt);
-                Player.Swing(sand);
-                Player.Swing(sand); //test reset
+
+                if (choice == "P")
+                {
+                    Player.Swing(Putt);
+                }
+                else if (choice == "S")
+                {
+                    Player.Swing(sand);
+                }
             }
             else
             {
