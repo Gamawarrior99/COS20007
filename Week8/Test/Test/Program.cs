@@ -19,7 +19,8 @@ namespace Test
             /*test if Holding is false*/
             if (Player.Holding() == true)
             {
-                Console.WriteLine("Choose a \n P) Putter \n S) SandWedge");
+                Console.WriteLine("Choose From the Follwowing \n P) Putter \n S) SandWedge");
+                Console.Write("Choice");
                 choice = Console.ReadLine();
                 Console.WriteLine("Breathe and Focus");
 
@@ -34,7 +35,7 @@ namespace Test
             }
             else
             {
-                Console.WriteLine("Where is my Caddy?");
+                Console.WriteLine("Where is my Caddy?\n");
             }
 
             /* This adds Two types of Clubs to the player */
@@ -43,7 +44,8 @@ namespace Test
 
             while (choice.ToLower() != "n") // loop to test differnt swing types and if it resets
             {
-                Console.WriteLine("Choose a \n P) Putter \n S) SandWedge \n N) Exit");
+                Console.WriteLine("Choose From the Follwowing \n P) Putter \n S) SandWedge");
+                Console.Write("Choice: ");
                 choice = Console.ReadLine();
 
                 if (Player.Holding() == true)
@@ -61,12 +63,9 @@ namespace Test
                 }
                 else
                 {
-                    Console.WriteLine("Where is my Caddy?");
+                    Console.WriteLine("Where is my Caddy? \n");
                 }
-            } ;
-
-            /* keeps informatino on screen to be read */
-            Console.ReadLine();
+            }
         }
     }
 }

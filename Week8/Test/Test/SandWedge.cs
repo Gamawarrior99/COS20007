@@ -25,7 +25,7 @@ namespace Test
             }
             if (_count == 0)
             {
-                Console.WriteLine("Hand me My hockey Stick");
+                Console.WriteLine("Hand me My hockey Stick\n");
                 this.Throw();
             }
         }

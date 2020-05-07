@@ -11,7 +11,7 @@ namespace Test
         public Putter() { }
         public override void Swing()
         {
-            Console.WriteLine("Putt Putt Putt");
+            Console.WriteLine("Putt Putt Puttn\n");
         }
     }
 }
