@@ -21,18 +21,16 @@ namespace Test
             {
                 Console.WriteLine("Choose a \n P) Putter \n S) SandWedge");
                 choice = Console.ReadLine();
-                Console.WriteLine("Breate and Focus");
+                Console.WriteLine("Breathe and Focus");
 
-                if (choice == "P")
+                if (choice.ToLower() == "p")
                 {
                     Player.Swing(Putt);
                 }
-                else if (choice == "S")
+                else if (choice.ToLower() == "s")
                 {
                     Player.Swing(sand);
                 }
-                
-               
             }
             else
             {
@@ -43,26 +41,29 @@ namespace Test
             Player.PickUp(Putt);
             Player.PickUp(sand);
 
-            /*This Tests if  holding is true */
-            if (Player.Holding() == true)
+            while (choice.ToLower() != "n") // loop to test differnt swing types and if it resets
             {
-                Console.WriteLine("Choose a \n P) Putter \n S) SandWedge");
+                Console.WriteLine("Choose a \n P) Putter \n S) SandWedge \n N) Exit");
                 choice = Console.ReadLine();
-                Console.WriteLine("Breate and Focus");
 
-                if (choice == "P")
+                if (Player.Holding() == true)
                 {
-                    Player.Swing(Putt);
+                    Console.WriteLine("Breathe and Focus");
+
+                    if (choice.ToLower() == "p")
+                    {
+                        Player.Swing(Putt);
+                    }
+                    else if (choice.ToLower() == "s")
+                    {
+                        Player.Swing(sand);
+                    }
                 }
-                else if (choice == "S")
+                else
                 {
-                    Player.Swing(sand);
+                    Console.WriteLine("Where is my Caddy?");
                 }
-            }
-            else
-            {
-                Console.WriteLine("Where is my Caddy?");
-            }
+            } ;
 
             /* keeps informatino on screen to be read */
             Console.ReadLine();
