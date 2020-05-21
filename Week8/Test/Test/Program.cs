@@ -12,60 +12,23 @@ namespace Test
         {
             /*creation of Objects used */
             Golfer Player = new Golfer();
-            Putter Putt = new Putter();
-            SandWedge sand = new SandWedge();
-            string choice = "P";
 
-            /*test if Holding is false*/
-            if (Player.Holding() == true)
-            {
-                Console.WriteLine("Choose From the Follwowing \n P) Putter \n S) SandWedge");
-                Console.Write("Choice");
-                choice = Console.ReadLine();
-                Console.WriteLine("Breathe and Focus");
+            Console.WriteLine("Choose you Club\n Putter\n SandWedge");
+            Console.WriteLine(Player.Holding()); //to test holding
 
-                if (choice.ToLower() == "p")
-                {
-                    Player.Swing(Putt);
-                }
-                else if (choice.ToLower() == "s")
-                {
-                    Player.Swing(sand);
-                }
-            }
-            else
-            {
-                Console.WriteLine("Where is my Caddy?\n");
-            }
 
-            /* This adds Two types of Clubs to the player */
-            Player.PickUp(Putt);
-            Player.PickUp(sand);
+            Player.PickUp("sandwedge");
+            Player.Swing("sandwedge");
+      
 
-            while (choice.ToLower() != "n") // loop to test differnt swing types and if it resets
-            {
-                Console.WriteLine("Choose From the Follwowing \n P) Putter \n S) SandWedge");
-                Console.Write("Choice: ");
-                choice = Console.ReadLine();
+            Console.WriteLine(Player.Holding());
 
-                if (Player.Holding() == true)
-                {
-                    Console.WriteLine("Breathe and Focus");
+            Player.PickUp("putter");
+            Player.Swing("putter");
 
-                    if (choice.ToLower() == "p")
-                    {
-                        Player.Swing(Putt);
-                    }
-                    else if (choice.ToLower() == "s")
-                    {
-                        Player.Swing(sand);
-                    }
-                }
-                else
-                {
-                    Console.WriteLine("Where is my Caddy? \n");
-                }
-            }
+            Console.WriteLine(Player.Holding());
+
+            Console.ReadLine();
         }
     }
 }

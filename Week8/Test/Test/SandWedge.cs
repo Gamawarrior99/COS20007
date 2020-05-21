@@ -14,6 +14,7 @@ namespace Test
         public SandWedge() 
         {
             _count = 5;
+            Name = "sandwedge";
         }
 
         public override void Swing()

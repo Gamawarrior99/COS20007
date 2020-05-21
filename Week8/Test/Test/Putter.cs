@@ -8,7 +8,11 @@ namespace Test
 {
     class Putter : GolfClub
     {
-        public Putter() { }
+         
+        public Putter()
+        {
+            Name = "putter";
+        }
         public override void Swing()
         {
             Console.WriteLine("Putt Putt Puttn\n");

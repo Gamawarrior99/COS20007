@@ -9,6 +9,8 @@ namespace Test
     class Golfer
     {
         private List<GolfClub> _club;
+        GolfClub Putt = new Putter();
+        GolfClub sand = new SandWedge();
 
         public Golfer()
         {
@@ -27,19 +29,34 @@ namespace Test
             }
         }
 
-        public void PickUp(GolfClub Club)
+        public void PickUp(string Club)
         {
-            _club.Add(Club);
+            if (Club == Putt.Name)
+            {
+                _club.Add(Putt);
+            }
+            else if (Club == sand.Name)
+            {
+                _club.Add(sand);
+            }
+            else
+            {
+                Console.WriteLine("Club Doesn't exist");
+            }
 
         }
 
-        public void Swing(GolfClub Club)
+        public void Swing(string  Club)
         {
-            foreach (GolfClub C in _club)
+            foreach (GolfClub c in _club)
             {
-                if (C == Club)
+                if (Club == c.Name)
                 {
-                    C.Swing();
+                    c.Swing();
+                }
+                else
+                {
+                    Console.WriteLine("Club Doesn't exist");
                 }
             }
         }
