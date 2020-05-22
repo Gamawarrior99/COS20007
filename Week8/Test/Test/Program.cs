@@ -16,6 +16,8 @@ namespace Test
             Console.WriteLine("Choose you Club\n Putter\n SandWedge");
             Console.WriteLine(Player.Holding()); //to test holding
 
+            Player.Swing("Random");
+
 
             Player.PickUp("sandwedge");
             Player.Swing("sandwedge");
@@ -27,6 +29,10 @@ namespace Test
             Player.Swing("putter");
 
             Console.WriteLine(Player.Holding());
+
+            Player.PickUp("Random");
+            Player.Swing("Random");
+
 
             Console.ReadLine();
         }
