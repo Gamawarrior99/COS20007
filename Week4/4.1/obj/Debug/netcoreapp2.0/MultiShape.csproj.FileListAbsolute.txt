@@ -10,3 +10,15 @@ C:\Users\gamal\Documents\Uni\BA-CS\Year 2 Semester 1\COS20007\Week4\MultiShape\o
 C:\Users\gamal\Documents\Uni\BA-CS\Year 2 Semester 1\COS20007\Week4\MultiShape\obj\Debug\netcoreapp2.0\MultiShape.dll
 C:\Users\gamal\Documents\Uni\BA-CS\Year 2 Semester 1\COS20007\Week4\MultiShape\obj\Debug\netcoreapp2.0\MultiShape.pdb
 C:\Users\gamal\Documents\Uni\BA-CS\Year 2 Semester 1\COS20007\Week4\MultiShape\obj\Debug\netcoreapp2.0\MultiShape.genruntimeconfig.cache
+C:\Users\gamal\Documents\Uni\BA-CS\Year 2 Semester 1\COS20007\Week4\4.1\bin\Debug\netcoreapp2.0\MultiShape.deps.json
+C:\Users\gamal\Documents\Uni\BA-CS\Year 2 Semester 1\COS20007\Week4\4.1\bin\Debug\netcoreapp2.0\MultiShape.runtimeconfig.json
+C:\Users\gamal\Documents\Uni\BA-CS\Year 2 Semester 1\COS20007\Week4\4.1\bin\Debug\netcoreapp2.0\MultiShape.runtimeconfig.dev.json
+C:\Users\gamal\Documents\Uni\BA-CS\Year 2 Semester 1\COS20007\Week4\4.1\bin\Debug\netcoreapp2.0\MultiShape.dll
+C:\Users\gamal\Documents\Uni\BA-CS\Year 2 Semester 1\COS20007\Week4\4.1\bin\Debug\netcoreapp2.0\MultiShape.pdb
+C:\Users\gamal\Documents\Uni\BA-CS\Year 2 Semester 1\COS20007\Week4\4.1\obj\Debug\netcoreapp2.0\MultiShape.csprojAssemblyReference.cache
+C:\Users\gamal\Documents\Uni\BA-CS\Year 2 Semester 1\COS20007\Week4\4.1\obj\Debug\netcoreapp2.0\MultiShape.csproj.CoreCompileInputs.cache
+C:\Users\gamal\Documents\Uni\BA-CS\Year 2 Semester 1\COS20007\Week4\4.1\obj\Debug\netcoreapp2.0\MultiShape.AssemblyInfoInputs.cache
+C:\Users\gamal\Documents\Uni\BA-CS\Year 2 Semester 1\COS20007\Week4\4.1\obj\Debug\netcoreapp2.0\MultiShape.AssemblyInfo.cs
+C:\Users\gamal\Documents\Uni\BA-CS\Year 2 Semester 1\COS20007\Week4\4.1\obj\Debug\netcoreapp2.0\MultiShape.dll
+C:\Users\gamal\Documents\Uni\BA-CS\Year 2 Semester 1\COS20007\Week4\4.1\obj\Debug\netcoreapp2.0\MultiShape.pdb
+C:\Users\gamal\Documents\Uni\BA-CS\Year 2 Semester 1\COS20007\Week4\4.1\obj\Debug\netcoreapp2.0\MultiShape.genruntimeconfig.cache

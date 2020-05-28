@@ -43,20 +43,16 @@ namespace MultiShape
                     Shape newShape;
                     if (Kindtoadd == ShapeKind.Circle)
                     {
-                        Circle newCircle = new Circle();
-                        newCircle.Pos = SplashKit.MousePosition();
-                        newShape = newCircle;
+                        newShape = new Circle();
+                        
                     }
                     else if (Kindtoadd == ShapeKind.Rectangle)
                     {
-                        Rectangle newRect = new Rectangle();
-                        newRect.Pos = SplashKit.MousePosition();
-                        newShape = newRect;
-                    }
+                        newShape = new Rectangle();
+                                            }
                     else
                     {
                         Line newLine = new Line();
-                        newLine.Pos = SplashKit.MousePosition();
                         x_axis = rnd.Next(-400, 400);
                         y_axis = rnd.Next(-300, 300);
                         lin.X = SplashKit.MouseX() + x_axis;
@@ -64,7 +60,9 @@ namespace MultiShape
                         newLine.Endl = lin;
                         newShape = newLine;
                     }
+                    newShape.Pos = SplashKit.MousePosition();
                     MyDraw.AddShape(newShape);
+
                 }
 
                 if (SplashKit.KeyTyped(KeyCode.SpaceKey))

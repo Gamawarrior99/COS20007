@@ -8,8 +8,7 @@ namespace MultiShape
     public class Circle : Shape
     {
         private int _radius;
-        private SplashKitSDK.Circle cir;
-         
+        
         
 
         public int Radius
@@ -39,10 +38,11 @@ namespace MultiShape
             }
         }
 
-        public override bool isat(Point2D pt)
+        public override bool IsAt(Point2D pt)
         {
-            cir.Radius = Radius;
-            cir.Center = Pos;
+           SplashKitSDK.Circle cir;
+           cir.Radius = Radius;
+           cir.Center = Pos;
 
             if  (SplashKit.PointInCircle(pt, cir))
             {

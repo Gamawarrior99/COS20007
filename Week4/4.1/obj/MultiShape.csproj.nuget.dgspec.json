@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gamal\\Documents\\Uni\\BA-CS\\Year 2 Semester 1\\COS20007\\Week4\\MultiShape\\MultiShape.csproj": {}
+    "C:\\Users\\gamal\\Documents\\Uni\\BA-CS\\Year 2 Semester 1\\COS20007\\Week4\\4.1\\MultiShape.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gamal\\Documents\\Uni\\BA-CS\\Year 2 Semester 1\\COS20007\\Week4\\MultiShape\\MultiShape.csproj": {
+    "C:\\Users\\gamal\\Documents\\Uni\\BA-CS\\Year 2 Semester 1\\COS20007\\Week4\\4.1\\MultiShape.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gamal\\Documents\\Uni\\BA-CS\\Year 2 Semester 1\\COS20007\\Week4\\MultiShape\\MultiShape.csproj",
+        "projectUniqueName": "C:\\Users\\gamal\\Documents\\Uni\\BA-CS\\Year 2 Semester 1\\COS20007\\Week4\\4.1\\MultiShape.csproj",
         "projectName": "MultiShape",
-        "projectPath": "C:\\Users\\gamal\\Documents\\Uni\\BA-CS\\Year 2 Semester 1\\COS20007\\Week4\\MultiShape\\MultiShape.csproj",
+        "projectPath": "C:\\Users\\gamal\\Documents\\Uni\\BA-CS\\Year 2 Semester 1\\COS20007\\Week4\\4.1\\MultiShape.csproj",
         "packagesPath": "C:\\Users\\gamal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gamal\\Documents\\Uni\\BA-CS\\Year 2 Semester 1\\COS20007\\Week4\\MultiShape\\obj\\",
+        "outputPath": "C:\\Users\\gamal\\Documents\\Uni\\BA-CS\\Year 2 Semester 1\\COS20007\\Week4\\4.1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gamal\\AppData\\Roaming\\NuGet\\NuGet.Config",

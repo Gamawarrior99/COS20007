@@ -8,7 +8,7 @@ namespace MultiShape
     public class Line : Shape
     {
         private Point2D _endl;
-        private SplashKitSDK.Line _lin;
+        
 
         public Point2D Endl
         {
@@ -39,9 +39,10 @@ namespace MultiShape
             }
         }
 
-        public override bool isat(Point2D pt)
+        public override bool IsAt(Point2D pt)
         {
-            _lin.StartPoint = Pos;
+            SplashKitSDK.Line _lin;
+        _lin.StartPoint = Pos;
            _lin.EndPoint = _endl;
 
             if (SplashKit.PointOnLine(pt,_lin))

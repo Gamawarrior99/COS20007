@@ -8,7 +8,7 @@ namespace MultiShape
     class Rectangle : Shape
     {
         private int _width, _height;
-        private SplashKitSDK.Rectangle rect;
+        
         public int Width
         {
             get
@@ -48,8 +48,9 @@ namespace MultiShape
             }
         }
 
-        public override bool isat(Point2D pt)
+        public override bool IsAt(Point2D pt)
         {
+            SplashKitSDK.Rectangle rect;
             rect.X = Pos.X;
             rect.Y = Pos.Y;
             rect.Height = Height;

@@ -58,7 +58,7 @@ namespace MultiShape
 
         public abstract void Draw();
 
-        public abstract bool isat(Point2D pt);
+        public abstract bool IsAt(Point2D pt);
 
         public abstract void DrawOutline();
 

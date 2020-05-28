@@ -56,7 +56,7 @@ namespace MultiShape
         {
             foreach (Shape s in _shapes)
             {
-                if (s.isat(SplashKit.MousePosition()))
+                if (s.IsAt(SplashKit.MousePosition()))
                 {
                     s.Selected = true;
                 }
