@@ -25,7 +25,7 @@ namespace Iteration2
         [Test]
         public void PlayerIdentifiable()
         {
-            Assert.AreEqual(true, Player1.AreYou("me"));
+            Assert.That(Player1.AreYou("me"), Is.True);
         }
         [Test]
         public void LocateItems()
@@ -47,7 +47,7 @@ namespace Iteration2
         public void FullDescription()
         {
             Player1.Inventory.Put(Sword);
-            Assert.AreEqual("You Are Carraying \nLong-Sword A heavy Weapon used to seriously maim the guy who created oop\n", Player1.FullDescription);
+            Assert.AreEqual("Long-Sword A heavy Weapon used to seriously maim the guy who created oop\n", Player1.FullDescription);
         }
     }
 }

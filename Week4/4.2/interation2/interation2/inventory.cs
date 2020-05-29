@@ -6,10 +6,11 @@ namespace Iteration2
 {
     public class Inventory
     {
-        private List<Item> _items = new List<Item>();
+        private List<Item> _items;
 
         public Inventory()
         {
+            _items = new List<Item>();
         }
 
         public Item Fetch(string id)

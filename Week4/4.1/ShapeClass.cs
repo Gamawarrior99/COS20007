@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using SplashKitSDK;
 
@@ -7,7 +8,7 @@ namespace MultiShape
 {
     public abstract class Shape
     {
-        private  Point2D _Pos;
+        private float _x, _y;
         private Color _color;
         private bool _selected;
 
@@ -22,16 +23,29 @@ namespace MultiShape
                 _color = value;
             }
         }
-
-        public Point2D Pos
+        public float X
         {
+
             get
             {
-                return _Pos;
+                return _x;
             }
             set
             {
-                _Pos = value;
+                _x = value;
+            }
+        }
+
+        public float Y
+        {
+
+            get
+            {
+                return _y;
+            }
+            set
+            {
+                _y = value;
             }
         }
 

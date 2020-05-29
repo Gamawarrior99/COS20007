@@ -8,8 +8,6 @@ namespace MultiShape
     public class Circle : Shape
     {
         private int _radius;
-        
-        
 
         public int Radius
         {
@@ -26,12 +24,14 @@ namespace MultiShape
         {
             _radius = radius;
         }
-        public Circle() : this(Color.Blue, 50){}
+        public Circle() : this(Color.Blue, 50)
+        {
+        }
 
 
         public override void Draw()
         {
-            SplashKit.FillCircle(clr, Pos.X, Pos.Y, Radius);
+            SplashKit.FillCircle(clr, X, Y, Radius);
             if (Selected)
             {
                 DrawOutline();
@@ -40,11 +40,7 @@ namespace MultiShape
 
         public override bool IsAt(Point2D pt)
         {
-           SplashKitSDK.Circle cir;
-           cir.Radius = Radius;
-           cir.Center = Pos;
-
-            if  (SplashKit.PointInCircle(pt, cir))
+            if  (SplashKit.PointInCircle(pt, SplashKit.CircleAt(X,Y, Radius)))
             {
                 return true;
             }
@@ -56,7 +52,7 @@ namespace MultiShape
 
         public override void DrawOutline()
         {
-            SplashKit.DrawCircle(Color.Black, Pos.X , Pos.Y, Radius+2);
+            SplashKit.DrawCircle(Color.Black, X , Y, Radius+2);
         }
     }
 }

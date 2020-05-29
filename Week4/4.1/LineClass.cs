@@ -7,45 +7,25 @@ namespace MultiShape
 {
     public class Line : Shape
     {
-        private Point2D _endl;
-        
+        private float _endx, _endy;
 
-        public Point2D Endl
-        {
-            get
-            {
-                return _endl;
-            }
-            set
-            {
-                _endl = value;
-            }
-        }
-        public Line(Color clr, float endX, float endY) : base(clr)
-        {
-            _endl.X = endX;
-            _endl.Y = endY;
-            
+        public float Endx { get => _endx; set => _endx = value; }
+        public float Endy { get => _endy; set => _endy = value; }
 
-        }
-        public Line() : this(Color.Red,  100, 100){}
-
+        public Line(Color clr, float endX, float endY) : base(clr){}
+        public Line() : this(Color.Red, 100, 100){ }
         public override void Draw()
         {
-            SplashKit.DrawLine(clr, Pos.X, Pos.Y, _endl.X, _endl.Y);
+            SplashKit.DrawLine(clr, X, Y, Endx, _endy);
             if (Selected)
             {
                 DrawOutline();
             }
         }
-
         public override bool IsAt(Point2D pt)
         {
-            SplashKitSDK.Line _lin;
-        _lin.StartPoint = Pos;
-           _lin.EndPoint = _endl;
-
-            if (SplashKit.PointOnLine(pt,_lin))
+            
+            if (SplashKit.PointOnLine(pt, SplashKit.LineFrom(X, Y, Endx, _endy)))
             {
                 return true;
             }
@@ -58,8 +38,8 @@ namespace MultiShape
         public override void DrawOutline()
         {
             float radius = 5f;
-            SplashKit.FillCircle(Color.Black, Pos.X, Pos.Y, radius);
-            SplashKit.FillCircle(Color.Black, _endl.X, _endl.Y, radius);
+            SplashKit.FillCircle(Color.Black, X, Y, radius);
+            SplashKit.FillCircle(Color.Black, Endx, _endy, radius);
         }
     }
 }

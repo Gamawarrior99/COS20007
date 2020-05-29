@@ -54,7 +54,7 @@ namespace Iteration2
         {
             inv.Fetch("Sword");
             inv.Take("Sword");
-            Assert.AreEqual(false, inv.HasItem("Sword"));
+            Assert.That(inv.HasItem("Sword"), Is.False);
         }
     }
 }

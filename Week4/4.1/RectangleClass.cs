@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Microsoft.VisualBasic;
 using SplashKitSDK;
 
 namespace MultiShape
@@ -41,7 +42,7 @@ namespace MultiShape
         public Rectangle() : this(Color.Green, 150, 100){}
         public override void Draw()
         {
-            SplashKit.FillRectangle(clr, Pos.X, Pos.Y, Width, Height);
+            SplashKit.FillRectangle(clr, X, Y, Width, Height);
             if (Selected)
             {
                 DrawOutline();
@@ -50,12 +51,8 @@ namespace MultiShape
 
         public override bool IsAt(Point2D pt)
         {
-            SplashKitSDK.Rectangle rect;
-            rect.X = Pos.X;
-            rect.Y = Pos.Y;
-            rect.Height = Height;
-            rect.Width = Width;
-            if (SplashKit.PointInRectangle(pt,rect))
+  
+            if (SplashKit.PointInRectangle(pt, SplashKit.RectangleFrom(X, Y, Width, Height)))
             {
                 return true;
             }
@@ -67,7 +64,7 @@ namespace MultiShape
 
         public override void DrawOutline()
         {
-            SplashKit.DrawRectangle(Color.Black, Pos.X -2, Pos.Y -2, Width +4, Height+4);
+            SplashKit.DrawRectangle(Color.Black, X -2, Y -2, Width +4, Height+4);
         }
     }
 }

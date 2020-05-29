@@ -13,7 +13,7 @@ namespace Iteration2
         [Test()]
         public void Item_Identifiable()
         {
-            Assert.AreEqual(true, Sword.AreYou("Sword"));
+            Assert.That(Sword.AreYou("Sword"), Is.True);
         }
 
         [Test()]
@@ -26,7 +26,7 @@ namespace Iteration2
         [Test()]
         public void Full_Description()
         {
-            Assert.AreEqual("A heavy Weapon used to seriously maim the guy who created oop", Sword.FullDescription);
+            Assert.AreEqual("You are: Long-Sword\n you are carrying\nA heavy Weapon used to seriously maim the guy who created oop", Sword.FullDescription);
         }
     }
 }

@@ -15,10 +15,6 @@ namespace MultiShape
             Drawing MyDraw = new Drawing { Background = Color.White };
             SplashKit.ClearScreen(MyDraw.Background);
             ShapeKind Kindtoadd = ShapeKind.Circle;
-            Random rnd = new Random();
-            Point2D lin;
-            int x_axis;
-            int y_axis;
 
             do
             {
@@ -49,18 +45,24 @@ namespace MultiShape
                     else if (Kindtoadd == ShapeKind.Rectangle)
                     {
                         newShape = new Rectangle();
-                                            }
+                    }
                     else
                     {
+                        Random rnd = new Random();
+                        float endx, endy;
+                        int x_axis;
+                        int y_axis;
                         Line newLine = new Line();
                         x_axis = rnd.Next(-400, 400);
                         y_axis = rnd.Next(-300, 300);
-                        lin.X = SplashKit.MouseX() + x_axis;
-                        lin.Y = SplashKit.MouseY() + y_axis;
-                        newLine.Endl = lin;
+                        endx = SplashKit.MouseX() + x_axis;
+                        endy = SplashKit.MouseY() + y_axis;
+                        newLine.Endx = endx;
+                        newLine.Endy = endy;
                         newShape = newLine;
                     }
-                    newShape.Pos = SplashKit.MousePosition();
+                    newShape.X = SplashKit.MouseX();
+                    newShape.Y = SplashKit.MouseY();
                     MyDraw.AddShape(newShape);
 
                 }

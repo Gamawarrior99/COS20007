@@ -6,7 +6,7 @@ namespace Iteration2
 {
     public class Player : Game_Object
     {
-        private Inventory _inventory = new Inventory();
+        private Inventory _inventory;
 
         public Inventory Inventory
         {
@@ -17,13 +17,14 @@ namespace Iteration2
         }
         public Player(string name, string desc) : base(new string[] { "me", "inventory" }, name, desc)
         {
+            _inventory = new Inventory();
         }
 
         public override string FullDescription
         {
             get
             {
-                return "You Are Carraying \n" + _inventory.ItemList;
+                return _inventory.ItemList;
             }
         }
         public Game_Object Locate(string id)

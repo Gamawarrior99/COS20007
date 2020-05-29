@@ -29,7 +29,7 @@ namespace Iteration2
         {
             get
             {
-                return _description;
+                return "You are: "+_name+ "\n you are carrying\n" + _description;
             }
         }
 
