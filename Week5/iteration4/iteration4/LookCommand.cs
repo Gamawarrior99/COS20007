@@ -2,74 +2,76 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Iteration4
+namespace iteration4
 {
     class Look_Command : Command
     {
-        public Look_Command(string[] ids) : base(new string[] { "look" })
+        public Look_Command(string[] ids) : base(new string[] { "look" }){}
+        private string Look_At_In(string tId, I_have_inventory container)
         {
+            Game_Object obj;
+            obj= container.Locate(tId);
+
+            if ( obj != null)
+            {
+                return obj.FullDescription;
+            }
+            else
+            {
+                return "I cannot find " + tId + " in the " + container;
+
+            }
         }
 
-        public override string Execute(Player p, string[] text)
+        private I_have_inventory Fetch_Container(Player p, string containerid)
+        {
+            return p.Locate(containerid) as I_have_inventory;
+        }
+
+        public override string Exe(Player p, string[] text)
         {
             if (text.Length != 3 && text.Length != 5)
             {
                 return "I don't know how to look like that";
             }
-            else if (text[0] != "look")
+            if (text[0] != "look")
             {
                 return "Error in look input";
             }
 
-            else if (text[1] != "at")
+            if (text[1] != "at")
             {
                 return "What do you want to look at?";
             }
-            else if (text.Length == 5 && text[3] != "in")
+            if (text.Length == 5 && text[3] != "in")
             {
                 return "What do you want to look in?";
             }
 
-            else if (text.Length == 3)
+            if (text.Length == 3)
             {
-                IHaveInventory inv = FetchContainer(p, text[4]);
-                return LookAtIn(text[2],inv);
+                return Look_At_In(text[2], p);
             }
-            else if (text.Length == 5)
-            {
 
-                if (FetchContainer(p, text[4]) == null)
+            if (text.Length == 5)
+            {
+                if (Fetch_Container(p, text[4]) == null)
                 {
-                    return "I cannot find the " + text[4];
+                    return "Cannot find the " + text[4];
+                }
+                string var = Look_At_In(text[2], Fetch_Container(p, text[4]));
+
+                if (var == null)
+                {
+                    return "Cannot find the " + text[2];
                 }
                 else
                 {
-                    return LookAtIn(text[2], FetchContainer(p, text[4]));
+
+                    return var;
                 }
             }
-
-            return "Error: Unknown command";
-        }
-
-        public IHaveInventory FetchContainer(Player p, string containerid)
-        {
-            IHaveInventory container;
-            return container = p.Locate(containerid) as IHaveInventory; //cast
-        }
-
-        public string LookAtIn(string thingId, IHaveInventory container)
-        {
-            if (container.Locate(thingId) == null)
-            {
-                return "I cannot find the " + thingId;
-            }
-            else
-            {
-                Game_Object obj = container.Locate(thingId) as Game_Object;
-
-                return obj.FullDescription;
-            }
-
+            return "Error";
         }
     }
 }

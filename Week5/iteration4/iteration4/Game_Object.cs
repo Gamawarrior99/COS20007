@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Iteration4
+namespace iteration4
 {
-    public abstract class Game_Object : indentifiable
+    public abstract class Game_Object : Identifiable_object
     {
         private string _description;
         private string _name;
@@ -17,11 +17,19 @@ namespace Iteration4
             }
         }
 
-        public string ShortDescription
+        public string Desc
         {
             get
             {
                 return _description;
+            }
+        }
+
+        public string ShortDescription
+        {
+            get
+            {
+                return _name + " " + _description;
             }
         }
 

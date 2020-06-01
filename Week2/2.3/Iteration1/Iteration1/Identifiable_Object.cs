@@ -25,6 +25,7 @@ namespace Iteration1
 
         public Identifiable_Object(string[] idents)
         {
+            _identifiers = new List<string>();
             foreach (string s in idents)
             {
                 _identifiers.Add(s.ToLower());
@@ -50,7 +51,7 @@ namespace Iteration1
                 return "";
             }
 
-            return _identifiers[0].ToLower();
+            return _identifiers[0];
         }
 
         public void Add_Identifier(string id)

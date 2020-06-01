@@ -2,30 +2,24 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Iteration4
+namespace iteration4
 {
-    public class Player : Game_Object
+    class Player : Game_Object, I_have_inventory
     {
-        private Inventory _inventory = new Inventory();
-
-        public Inventory Inventory
+        private Inventory _inventory;
+        public Inventory inventory
         {
             get
             {
                 return _inventory;
             }
         }
+
         public Player(string name, string desc) : base(new string[] { "me", "inventory" }, name, desc)
         {
+            _inventory = new Inventory();
         }
 
-        public override string FullDescription
-        {
-            get
-            {
-                return "You Are Carraying \n" + _inventory.ItemList;
-            }
-        }
         public Game_Object Locate(string id)
         {
             if (AreYou(id))
@@ -34,9 +28,16 @@ namespace Iteration4
             }
             else
             {
-                return _inventory.Fetch(id);
+                return inventory.Fetch(id);
             }
+        }
 
+        public override string FullDescription
+        {
+            get
+            {
+                return "You are " + Name + ". " + Desc + ".";
+            }
         }
     }
 }

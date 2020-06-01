@@ -3,87 +3,94 @@ using System.Collections.Generic;
 using System.Text;
 using NUnit.Framework;
 
-namespace Iteration4
+namespace iteration4
 {
     [TestFixture]
-    public class LookCommandUnitTest
+    public class NunitTestsLook
     {
-        Player newPlayer;
-        Inventory bagInventory, playerInventory;
-        Item gem;
         Look_Command look;
-        Bag bag;
+        Player newplayer;
+        Bag bag1;
+        Item gem;
 
         [SetUp]
         public void SetUp()
         {
-            newPlayer = new Player("me", "inventory");
-            bag = new Bag(new string[] { "bag" }, "a bag", "A bag which contains items");
-            playerInventory = newPlayer.Inventory;
-            bagInventory = bag.Inventory;
-            gem = new Item(new string[] { "gem" }, "a gem", "A shiny red gem");
+
+
+            newplayer = new Player("Gam", "The big man");
+            bag1 = new Bag(new string[] { "bag", "bags" }, "Bag", "Stores All your Items");
+
+
+
             look = new Look_Command(new string[] { "look" });
+            gem = new Item(new string[] { "gem" }, "a gem", "a big gem");
 
-            playerInventory.Put(bag);
-            playerInventory.Put(gem);
         }
 
         [Test]
-        public void LookAtMe()
+        public void Look_At_Gem()
         {
-            Assert.AreEqual("You are Fred the mighty programmer\nYou are carrying\n\ta bag (bag)\n\ta gem (gem)\n", look.Execute(newPlayer, new string[] { "look", "at", "inventory" }));
+            newplayer.inventory.Put(gem);
+            Assert.AreEqual("a big gem", look.Exe(newplayer, new string[] { "look", "at", "gem", "in", "inventory" }));
         }
 
         [Test]
-        public void LookAtGem()
+        public void Look_At_Gem_In_Me()
         {
-            Assert.AreEqual("You are carrying a gem (gem)", look.Execute(newPlayer, new string[] { "look", "at", "gem" }));
+            newplayer.inventory.Put(gem);
+            Assert.AreEqual("a big gem", look.Exe(newplayer, new string[] { "look", "at", "gem", "in", "inventory" }));
         }
 
         [Test]
-        public void LookAtUnk()
+        public void Look_At_Me()
         {
-            playerInventory.Take("gem"); //remove gem item first
+            newplayer.inventory.Put(bag1);
 
-            Assert.AreEqual("I cannot find the gem", look.Execute(newPlayer, new string[] { "look", "at", "gem" }));
+            Assert.AreEqual("You are Gam. The big man.", look.Exe(newplayer, new string[] { "look", "at", "inventory" }));
+
         }
 
         [Test]
-        public void LookAtGemInMe()
+        public void Look_At_Unk()
         {
-            Assert.AreEqual("You are carrying a gem (gem)", look.Execute(newPlayer, new string[] { "look", "at", "gem", "in", "inventory" }));
+
+            Assert.AreEqual("I cannot find gem in the iteration4.Player", look.Exe(newplayer, new string[] { "look", "at", "gem" }));
         }
 
         [Test]
-        public void LookAtGemInBag()
+        public void Look_At_Gem_In_Bag()
         {
-            bagInventory.Put(gem);
+            newplayer.inventory.Put(bag1);
+            bag1.Inventory.Put(gem);
 
-            Assert.AreEqual("You are carrying a gem (gem)", look.Execute(newPlayer, new string[] { "look", "at", "gem", "in", "bag" }));
+            Assert.AreEqual("a big gem", look.Exe(newplayer, new string[] { "look", "at", "gem", "in", "bag" }));
         }
 
         [Test]
-        public void LookAtGemInNoBag()
+        public void Look_At_No_Gem_In_Bag()
         {
-            bagInventory.Put(gem);
-            playerInventory.Take("bag");
+            newplayer.inventory.Put(bag1);
 
-            Assert.AreEqual("I cannot find the bag", look.Execute(newPlayer, new string[] { "look", "at", "gem", "in", "bag" }));
+            Assert.AreEqual("I cannot find gem in the iteration4.Bag", look.Exe(newplayer, new string[] { "look", "at", "gem", "in", "bag" }));
         }
 
         [Test]
-        public void LookAtNoGemInBag()
+        public void Look_At_Gem_In_No_Bag()
         {
-            Assert.AreEqual("I cannot find the gem", look.Execute(newPlayer, new string[] { "look", "at", "gem", "in", "bag" }));
+
+
+            Assert.AreEqual("Cannot find the bag", look.Exe(newplayer, new string[] { "look", "at", "gem", "in", "bag" }));
         }
 
         [Test]
-        public void InvalidLook()
+        public void Invalid_Look()
         {
-            Assert.AreEqual("I don't know how to look like that", look.Execute(newPlayer, new string[] { "look", "test" }));
-            Assert.AreEqual("Error in look input", look.Execute(newPlayer, new string[] { "test", "at", "gem" }));
-            Assert.AreEqual("What do you want to look at?", look.Execute(newPlayer, new string[] { "look", "test", "gem" }));
-            Assert.AreEqual("What do you want to look in?", look.Execute(newPlayer, new string[] { "look", "at", "gem", "test", "bag" }));
+            Assert.AreEqual("I don't know how to look like that", look.Exe(newplayer, new string[] { "look", "test" }));
+            Assert.AreEqual("Error in look input", look.Exe(newplayer, new string[] { "test", "at", "gem" }));
+            Assert.AreEqual("What do you want to look at?", look.Exe(newplayer, new string[] { "look", "test", "gem" }));
+            Assert.AreEqual("What do you want to look in?", look.Exe(newplayer, new string[] { "look", "at", "gem", "test", "bag" }));
         }
+
     }
 }

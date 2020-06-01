@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Iteration4
+namespace iteration4
 {
-    class Bag : Item
+    public class Bag : Item, I_have_inventory
     {
-        Inventory _inventory = new Inventory();
+        private Inventory _inventory;
 
         public Inventory Inventory
         {
@@ -14,24 +14,13 @@ namespace Iteration4
             {
                 return _inventory;
             }
-            set
-            {
-                _inventory = value;
-            }
         }
 
-        public Bag(string[] id, string name, string desc) : base(new string[] { "Bag", "bag", "Bags", "bags", "BAG", "BAG" }, "Bags", "Bag")
+        public Bag(string[] idents, string name, string desc) : base(new string[] { "Bag", "Your trusty Bag" }, "Bag", "Your trusty bag that you take everywhere")
         {
-
+            _inventory = new Inventory();
         }
 
-        public override string FullDescription
-        {
-            get
-            {
-                return "You Are Carraying \n" + _inventory.ItemList;
-            }
-        }
         public Game_Object Locate(string id)
         {
             if (AreYou(id))
@@ -40,7 +29,15 @@ namespace Iteration4
             }
             else
             {
-                return _inventory.Fetch(id);
+                return Inventory.Fetch(id);
+            }
+        }
+
+        public override string FullDescription
+        {
+            get
+            {
+                return "Your trusty bag that you take everywhere\n " + Inventory.itemList;
             }
         }
     }

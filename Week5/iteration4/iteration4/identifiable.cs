@@ -1,12 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
-namespace Iteration4
+namespace iteration4
 {
-    public class indentifiable
+    public class Identifiable_object
     {
         private List<string> _identifiers;
+
+        public Identifiable_object(string[] idents)
+        {
+            Identifiers = new List<string>(idents);
+        }
+
+        public bool AreYou(string id)
+        {
+            foreach (string idents in _identifiers)
+            {
+                if (id.ToLower() == idents.ToLower())
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
         public List<string> Identifiers
         {
             get
@@ -19,30 +35,16 @@ namespace Iteration4
             }
         }
 
-        public indentifiable(string[] indents)
-        {
-            Identifiers = new List<string>(indents);
-        }
 
-        public bool AreYou(string id)
+        public string Firstid()
         {
-            foreach (string i in Identifiers)
-            {
-                if (id.ToLower() == i.ToLower())
-                {
-                    return true;
-                }
-            }
-            return false;
-        }
-
-        public string FirstId()
-        {
-            if (Identifiers.Count == 0)
+            if (_identifiers.Count == 0)
             {
                 return "";
             }
-            return Identifiers[0].ToLower();
+
+            return _identifiers[0].ToLower();
+
         }
 
         public void AddIdentifier(string id)

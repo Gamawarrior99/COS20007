@@ -2,33 +2,20 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Iteration4
+namespace iteration4
 {
     public class Inventory
     {
-        private List<Item> _items = new List<Item>();
+        private List<Item> _items;
 
         public Inventory()
         {
+            _items = new List<Item>();
         }
 
-        public Item Fetch(string id)
-        {
-            Item Result = null;
-            foreach (Item I in _items)
-            {
-                if (I.AreYou(id))
-                {
-                    Result = I;
-                }
-            }
-            return Result;
-        }
-
-        public bool HasItem(string id)
+        public bool Hasitem(string id)
         {
             return _items.Contains(Fetch(id));
-
         }
 
         public void Put(Item itm)
@@ -38,30 +25,43 @@ namespace Iteration4
 
         public Item Take(string id)
         {
-            Item Result = null;
-            foreach (Item I in _items)
+            Item r = null;
+            foreach (Item item in _items)
             {
-                if (I.AreYou(id))
+                if (item.AreYou(id))
                 {
-                    Result = I;
+                    r = item;
+                    _items.Remove(item);
                 }
             }
-            _items.Remove(Result);
-            return Result;
+            return r;
         }
-        public string ItemList
+
+        public Item Fetch(string id)
+        {
+            Item r = null;
+            foreach (Item item in _items)
+            {
+                if (item.AreYou(id))
+                {
+                    r = item;
+                }
+            }
+            return r;
+        }
+
+
+        public string itemList
         {
             get
             {
-                string i = "";
-                foreach (Item I in _items)
+                string answer = "The item you currently have is :\n ";
+                foreach (Item item in _items)
                 {
-                    i += I.Name + I.ShortDescription + "\n";
-
+                    answer += item.ShortDescription + "\n";
                 }
-                return i;
+                return answer;
             }
         }
-
     }
 }

@@ -2,13 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Iteration4
+namespace iteration4
 {
-	public abstract class Command:indentifiable
+    abstract class Command : Identifiable_object
     {
-            public Command(String[] ids):base(ids)
-            {
-            }
-            abstract public string Execute(Player p, string[] text);
+        public Command(string[] ids) : base(ids) { }
+        abstract public string Exe(Player p, string[] text);
     }
 }
