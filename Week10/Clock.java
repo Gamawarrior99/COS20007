@@ -1,5 +1,6 @@
 import java.awt.*;
 import java.io.IOException;
+import java.text.MessageFormat;
 
 
 public class Main
@@ -13,77 +14,82 @@ public class Main
 
   public static void main(String[] arg)
   {
-    Clock testClock = new Clock();
+    Clock TestClock = new Clock();
     while (true)
     {
-      testClock.Tick();
+      TestClock.Tick();
       try
       {
         Thread.sleep(1000);
         clearScreen();
       }catch (InterruptedException e) {}
 
-      System.out.println(testClock.Print());
+      System.out.println(TestClock.Print());
       
     }
   }
 }
 
+import java.awt.*;
+import java.io.IOException;
+import java.text.MessageFormat;
+
 public class Clock
 {
-    final int SECS_NUMBER = 60;
-    final int MINS_NUMBER = 60;
-    final int HRS_NUMBER = 24;
-    private Counter HRS = new Counter("Hours");
-    private Counter MINS = new Counter("Minutes");
-    private Counter SECS = new Counter("Seconds");
+    final int secNumber = 60;
+    final int minNumber = 60;
+    final int hourNumber = 24;
+    private Counter Hours;
+    private Counter Minute;
+    private Counter Second;
+
+    public Clock()
+    {
+      Hours = new Counter("Hours");
+      Minute = new Counter("Minutes");
+      Second = new Counter("Seconds");
+    }
 
     public final void Tick()
     {
-        SECS.Increment();
+      Second.Increment();
 
-        if((SECS.Value()) == SECS_NUMBER)
+        if((Second.Value()) == secNumber)
         {
-            MINS.Increment();
-            SECS.Reset();
+          Minute.Increment();
+          Second.Reset();
         }
 
-        if((MINS.Value()) == MINS_NUMBER)
+        if((Minute.Value()) == minNumber)
         {
             HRS.Increment();
-            MINS.Reset();
+            Minute.Reset();
         }
 
-        if((HRS.Value()) == HRS_NUMBER)
+        if((Hours.Value()) == hourNumber)
         {
-            HRS.Reset();
-            MINS.Reset();
-            SECS.Reset();
+          Hours.Reset();
+          Minute.Reset();
+          Second.Reset();
         }
     }
 
-
     public String Print()
     {
-
-        String _seconds;
-        String _minutes;
-        String _hours;
-
-
-        _seconds = Integer.toString(SECS.Value());
-        _minutes = Integer.toString(MINS.Value()) + ":";
-        _hours = Integer.toString(HRS.Value()) + ":";
-        return (_hours + _minutes + _seconds);
+        return MessageFormat.format("{0, Number,00}:{1, Number,00}:{2, Number,00}",Hours.Value(), Minute.Value(),Second.Value());
     }
 
     public void Reset()
     {
-        HRS.Reset();
-        MINS.Reset();
-        SECS.Reset();
+      Hours.Reset();
+      Minute.Reset();
+      Second.Reset();
     }
 }
+
+import java.awt.*;
+import java.io.IOException;
+import java.text.MessageFormat;
 
 public class Counter
 {
@@ -92,28 +98,39 @@ public class Counter
 
     public Counter (String name)
     {
-        this. _name = name;
-        this. _count = 0;
-    }
-
-    public void Increment()
-    {
-        _count = _count + 1;
-    }
-
-    public void Reset()
-    {
-        _count = 0;
+      _name = name;
+      _count = 0;
     }
 
     public String Name()
     {
         return _name;
     }
+    public void setName(String newName) 
+    {
+      this._name = newName;
+    }
 
     public int Value()
     {
         return _count;
     }
+   public int getCount() 
+    {
+      return _count;
+    }
+    public void setName(int newCount) 
+    {
+      this._count = newCount;
+    }
 
+    public void Increment()
+    {
+        _count += + 1;
+    }
+
+    public void Reset()
+    {
+        _count = 0;
+    }
 }
